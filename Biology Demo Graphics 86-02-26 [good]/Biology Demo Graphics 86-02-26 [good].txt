@@ -1,0 +1,1225 @@
+-------------------------------------------- SCREEN 011
+( STRING COMPARE         < 0/ 0/ 0> 88) 
+( ADDR1 ADDR2 -- 0/1 )                  
+: $=                                    
+   OVER C@ OVER C@ = ( TEST LENGTHS )   
+   IF 1 ( DEFAULT )                     
+      OVER C@ 0 ( GET LENGTH )          
+      DO DROP ( FORGET DEFAULT )        
+      1+ SWAP 1+ SWAP ( INCR. ADDRS )   
+      OVER C@ OVER C@ = ( FETCH CHARS ) 
+      IF 1 ELSE 0 LEAVE THEN            
+      ( DEFAULT OR BREAK )              
+      LOOP >R DDROP R>                  
+      ( DROP ADDRESSES )                
+   ELSE DDROP 0 ( DROP ADDRESSES )      
+   THEN ;                               
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 012
+( NAME-BUFFER   HANDLE-B\< 0/ 0/ 0> 89) 
+( KSP                                 ) 
+ CREATE NAME-BUFFER 13 ALLOT            
+                                        
+: HANDLE-BKSP ( LENGTH 8 -- LENGTH' )   
+   DROP                                 
+   DUP 0>                               
+   IF 32 OVER NAME-BUFFER + C!          
+      8 EMIT 32 EMIT 8 EMIT             
+      1- ( LENGTH' )                    
+   ELSE BEEP                            
+   THEN ;                               
+                                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 013
+( READ-NAME              < 0/ 0/ 0> 90) 
+: READ-NAME NAME-BUFFER 13 32 FILL      
+   0 ( LENGTH )                         
+   BEGIN KEY ( LENGTH CHAR )            
+       DUP 13 = NOT                     
+    WHILE                               
+       DUP 8 = IF HANDLE-BKSP ELSE      
+       ( BACKSPACE )                    
+       DUP 33 < IF DROP BEEP ELSE       
+       ( CONTROL CHAR )                 
+       DUP 127 > IF DROP BEEP ELSE      
+       OVER 11 > IF DROP BEEP ELSE      
+       ( TOO LONG )                     
+       SWAP 1+ SWAP DUP EMIT            
+       OVER NAME-BUFFER + C!            
+       THEN THEN THEN THEN              
+       REPEAT DROP CR ( LENGTH )        
+   NAME-BUFFER C! ;                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 014
+(                        < 0/ 0/ 0> 91) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 015
+( RING BUFFER FORMAT     < 0/ 0/ 0> 92) 
+: DTASK ;                               
+ (  --> )                               
+ EXIT                                   
+ BUFFER + 0 : SIZE IN BYTES OF EACH     
+ENTRY                                   
+ BUFFER + 2 : CURRENT NUMBER OF         
+ENTRIES                                 
+ BUFFER + 4 : CURRENT ENTRY             
+ BUFFER + 6 : FIRST ENTRY STARTS HERE   
+ ENTRY + 0 : NAME OF OBJECT ( 1 BYTE    
+COUNT, 12 BYTES ALFA )                  
+ ENTRY + 13 : ADDITIONAL DATA,          
+DEPENDING ON ENTRY SIZE                 
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 016
+( RING BUFFER PRIMITIVES\< 0/ 0/ 0> 93) 
+(    SB:                              ) 
+EXIT                                    
+: :SB ( BLOCKSIZE #BLOCKS -- * )        
+   CREATE OVER , ( BLOCKSIZE )          
+       DUP , ( #BLOCKS )                
+        0 , ( CURRENT_BLOCK )           
+      * HERE OVER 0 FILL                
+      ALLOT                             
+   DOES> ;                              
+                                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 017
+( RING BUFFER PRIMITIVES\< 0/ 0/ 0> 94) 
+(    >BLK  +BLK                       ) 
+: >BLK ( ^RING-BUFFER -- ^CURRENT )     
+    DUP @ ( FETCH SIZE )                
+    OVER 4 + @ * ( FETCH CURRENT ENTRY  
+    # )                                 
+    6 + ( COMPUTE OFFSET )              
+    + ; ( ^CURRENT )                    
+: +BLK ( ^RING-BUFFER -- )              
+    1 OVER 4 + +! ( INCREMENT CURRENT ) 
+    DUP 2+ @ ( FETCH TOTAL # OF         
+    ENTRIES )                           
+    OVER 4 + @ ( FETCH CURRENT BLOCK# ) 
+    < IF 0 SWAP 4 + ! ELSE DROP THEN ;  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 018
+( RING BUFFER PRIMITIVES\< 0/ 0/ 0> 95) 
+(   -BLK  !BLK#  @BLK#                ) 
+                                        
+: -BLK -1 OVER 4 + +!                   
+      DUP 4 + @                         
+      0<                                
+      IF DUP 2+ @ SWAP 4 + ! ELSE DROP  
+      THEN ;                            
+                                        
+: !BLK# ( N ^RING-BUFFER -- )           
+      DDUP 2+ @ >                       
+      IF DDROP ELSE 4 + ! THEN ;        
+                                        
+: @BLK# ( ^RING-BUFFER -- N )           
+      4 + @ ;                           
+                                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 019
+(                        < 0/ 0/ 0> 96) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 020
+( RING BUFFER PRIMITIVES\< 0/ 0/ 0> 97) 
+(    @MAX-BLK# ETC.                   ) 
+( BUFFER_ADDRESS -- MAX_BLOCK_NUMBER )  
+: @MAX-BLK# 2+ @ ;                      
+( N BUFFER_ADDRESS -- * )               
+: !MAX-BLK# 2+ ! ;                      
+( N BUFFER_ADDRESS -- * )               
+: +MAX-BLK# 2+ +! ;                     
+( N BUFFER_ADDRESS -- BLOCK_ADDRESS )   
+: >BLKN SWAP OVER @ * + 6 + ;           
+                                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 021
+( DIRECTORY:  FORMAT     < 0/ 0/ 0> 98) 
+EXIT -->                                
+ THE DIRECTORY OCCUPIES THE             
+BLOCK OF THE DATA                       
+ DISK, WHICH MUST BE IN DRIVE B.        
+ DIRECTORY + 0 : NEXT AVAILABLE SCREEN  
+FOR PICTURE STORAGE                     
+ DIRECTORY + 2 : NEXT AVAILABLE BYTE (  
+CURRENTLY, ALWAYS 0 )                   
+ DIRECTORY + 4 : START OF RING BUFFER   
+ ENTRY + 0 : NAME OF OBJECT ( 1 BYTE    
+COUNT, 12 BYTES ALFA )                  
+ ENTRY + 13 : SCREEN #                  
+ ENTRY + 15 : VXMIN                     
+ ENTRY + 17 : LENGTH IN SCREENS OF      
+OBJECT ( I.E., FIGURE )                 
+ ENTRY + 19 : VYMIN                     
+ ENTRY + 21 : WIDTH                     
+ ENTRY + 23 : HEIGHT                    
+ ENTRY + 25 : NEXT ENTRY                
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 022
+( DIRECTORY:  CHECK ALLO\< 0/ 0/ 0> 99) 
+( CATION                              ) 
+ 1024        CONSTANT DIR-SIZE          
+ 25 CONSTANT FIG-SIZE                   
+ 40 CONSTANT MAX-FIGS                   
+EXIT                                    
+                                        
+: CHECK-SIZE DIR-SIZE ( ALLOTED SIZE )  
+        FIG-SIZE MAX-FIGS * 4 + (       
+NECESSARY SIZE )                        
+        < IF CR ." ERROR: INSUFFICIENT  
+SPACE "                                 
+            ." ALLOTTED FOR             
+DIRECTORY."                             
+           CR QUIT                      
+        THEN ;                          
+ CHECK-SIZE FORGET CHECK-SIZE           
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 023
+(                        < 0/ 0/ 0>100) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 024
+( DIRECTORY:  CREATE     < 0/ 0/ 0>101) 
+CREATE DIRECTORY DIR-SIZE ALLOT         
+ DIRECTORY 4 + CONSTANT FIG-LIST        
+: INIT-DIR                              
+   DIRECTORY DIR-SIZE 0 FILL ( CLEAR    
+   DIRECTORY SPACE )                    
+   1 DIRECTORY 0 + ! ( DIRECTORY        
+   USES 1 SCREEN )                      
+   0 DIRECTORY 2 + ! ( NEXT AVAILABLE   
+   BYTE )                               
+   FIG-SIZE FIG-LIST 0 + ! ( SIZE OF    
+   EACH ENTRY )                         
+   MAX-FIGS FIG-LIST 2 + ! ( NUMBER OF  
+   ENTRIES )                            
+   0 FIG-LIST 4 + ! ; ( CURRENT ENTRY ) 
+   INIT-DIR                             
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 025
+( DIRECTORY:  DIR-TO-DIS < 0/ 0/ 0>102) 
+( K  DISK-TO-DIR                      ) 
+: DIR-TO-DISK                           
+   DIRECTORY 0  ONB  BLOCK 1K           
+   BMOVE UPDATE FLUSH ;                 
+                                        
+: DISK-TO-DIR                           
+   INIT-DIR ( CLEAR DIRECTORY SPACE )   
+    EMPTY-BUFFERS ( FORCE A READ )      
+    0  ONB  BLOCK                       
+    DIRECTORY                           
+    1K BMOVE ;                          
+                            ( 1:31)     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 026
+( DIRECTORY:  ACCESS OPE\< 0/ 0/ 0>103) 
+( RATORS                              ) 
+: !NEXTBLOCK ( N -- ) DIRECTORY 0 + !   
+;                                       
+: @NEXTBLOCK ( -- N ) DIRECTORY 0 + @   
+;                                       
+: !NEXTBYTE ( N -- ) DIRECTORY 2 + ! ;  
+: @NEXTBYTE ( -- N ) DIRECTORY 2 + @ ;  
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 027
+( FIG-LIST:   ACCESS OPE\< 0/ 0/ 0>104) 
+( RATORS                              ) 
+: ^ENTRYN ( N -- ADDR ) FIG-LIST >BLKN  
+;                                       
+: ^ENTRY    FIG-LIST >BLK ;             
+: ^NAME     ^ENTRY   0 + ;              
+: ^BLOCK#   ^ENTRY  13 + ;              
+: ^VXMIN    ^ENTRY  15 + ;              
+: ^VYMIN    ^ENTRY  17 + ;              
+: ^VXMAX    ^ENTRY  19 + ;              
+: ^VYMAX    ^ENTRY  21 + ;              
+: ^SIZE     ^ENTRY  23 + ;              
+: @XYMIN    ^VXMIN   @                  
+            ^VYMIN   @ ;                
+: @XYMAX ^VXMAX @ ^VYMAX @ ;            
+: !FIG# ( N -- ) FIG-LIST !BLK# ;       
+: @FIG# ( -- N ) FIG-LIST @BLK# ;       
+: +FIG ( -- ) FIG-LIST +BLK ;           
+: !NFIGS ( N -- ) FIG-LIST !MAX-BLK# ;  
+: @NFIGS ( -- N ) FIG-LIST @MAX-BLK# ;  
+: +NFIGS ( -- ) @NFIGS 1+ @FIG# MAX     
+    MAX-FIGS MIN !NFIGS ;               
+                                        
+                                        
+-------------------------------------------- SCREEN 028
+( FIG-LIST:   FIND-BLOCK\< 0/ 0/ 0>105) 
+(   NEXT FREE BLOCK                   ) 
+( -- LEAVES FIRST AVAILABLE BLOCK ON    
+STACK )                                 
+( 0 MEANS BUFFER IS FULL )              
+: FIND-BLOCK                            
+   0 !FIG#                              
+   BEGIN +FIG                           
+        ^NAME C@                        
+        127 AND 0=                      
+        @FIG# 0= OR                     
+   UNTIL                                
+   @FIG# 0= IF +NFIGS                   
+           @NFIGS !FIG#                 
+        THEN                            
+   @FIG# ;                              
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 029
+( FIG-LIST:   FIND-NAME  < 0/ 0/ 0>106) 
+( THE RING BUFFER POINTS TO NAME IF     
+FOUND. )                                
+( @FIG# RETURNS THE ADDRESS OF THE      
+BLOCK CONTAINING )                      
+( THE STRING. ^NAME COUNT TYPE WILL     
+PRINT IT. )                             
+: FIND-NAME ( ---- TRUE IF FOUND , 0    
+IF NOT FOUND )                          
+   0 !FIG#                              
+   BEGIN +FIG                           
+    NAME-BUFFER ^NAME $=                
+    @FIG# 0= OR                         
+   UNTIL                                
+   @FIG# ;                              
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 030
+( FIG-LIST:   !NAME  STO\< 0/ 0/ 0>107) 
+( RE NAME                             ) 
+: !NAME ( ^ENTRY POINTS TO NEXT         
+   AVAILABLE ENTRY )                    
+   NAME-BUFFER ^NAME 13 CMOVE ;         
+: .NAME ^NAME 13 TYPE 8 SPACES ;        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 031
+( FIG-LIST:   PIC-SIZE  \< 0/ 0/ 0>108) 
+(   NBLOCKS                           ) 
+( COMPUTE SIZE OF PICTURE IN BYTES AND  
+  IN DISK BLOCKS )                      
+: PIC-SIZE ( -- NBYTES )                
+   @WIDTH                               
+   @HEIGHT * 4 + ;                      
+                                        
+: NBLOCKS ( -- NBLOCKS )                
+  PIC-SIZE 1K /MOD SWAP 0> IF 1+        
+  THEN ;                                
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 032
+( FIG-LIST:   !SIZE !OFF\< 0/ 0/ 0>109) 
+( SET !BLOCK#   ETC.                  ) 
+: !SIZE ( -- ) NBLOCKS ^SIZE ! ;        
+: @SIZE ( -- N ) ^SIZE @ ;              
+: !BLOCK# ( -- ) @NEXTBLOCK ^BLOCK# ! ; 
+: @BLOCK# ( -- N ) ^BLOCK# @ ;          
+: +NEXTBLOCK ( -- ) @NEXTBLOCK NBLOCKS  
+     + !NEXTBLOCK ;                     
+: !XYMIN                                
+     VXMIN ^VXMIN ! VYMIN ^VYMIN ! ;    
+: !XYMAX VXMAX ^VXMAX !                 
+     VYMAX ^VYMAX ! ;                   
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 033
+( FIG-LIST:   NEW-ENTRY  < 0/ 0/ 0>110) 
+: NEW-ENTRY ( -- )                      
+   FIND-BLOCK                           
+   IF                                   
+     !NAME                              
+     !BLOCK#                            
+     !XYMIN !XYMAX                      
+     !SIZE                              
+   THEN ;                               
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 034
+(                        < 0/ 0/ 0>111) 
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 035
+( DIRECTORY LISTING:  AC\< 0/ 0/ 0>112) 
+( LEAR                                ) 
+( CLEARS SPACE WITH GIVEN ATTRIBUTE )   
+( LEAVES CURSOR AT [LOROW,LOCOL] )      
+EXIT                                    
+: ACLEAR ( LOROW LOCOL HIROW HICOL      
+ATTRIBUTE -- )                          
+   DDROP DDROP DROP ; EXIT  -->         
+  ( ATTRIBUTE ) ATTRIBUTE !             
+  DOVER SWAP BJOIN ( LOROW LOCOL HIROW  
+HICOL LO:R&C )                          
+  SWAP ROT BJOIN ( LOROW LOCOL LO:R&C   
+HI:R&C )                                
+  CLRSPACE ( LOROW LOCOL )              
+  SWAP XYTAB ; ( )                      
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 036
+( DIRECTORY LISTING:  =C\< 0/ 0/ 0>113) 
+( CONTINUE=                          )  
+ : =CONTINUE=                           
+     KEY DROP ;                         
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 037
+( DIRECTORY LISTING:  PR\< 0/ 0/ 0>114) 
+( INT POSITIONS                       ) 
+EXIT                                    
+   INTEGER DROW INTEGER DCOL            
+  2 CONSTANT MIN-DROW 19 CONSTANT       
+MAX-DROW                                
+  0 CONSTANT MIN-DCOL 77 CONSTANT       
+MAX-DCOL                                
+: R-INIT MIN-DROW TO DROW ;             
+: C-INIT MIN-DCOL TO DCOL ;             
+: RC-INIT R-INIT C-INIT                 
+      MIN-DROW MIN-DCOL 24 79 11        
+ACLEAR ;                                
+: =MORE= MAX-DROW 2+ 0 24 79 138        
+ACLEAR ( BLINK GREEN )                  
+      ." MORE ... "                     
+      =CONTINUE=                        
+      RC-INIT ;                         
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 038
+( DIRECTORY LISTING:  PR\< 0/ 0/ 0>115) 
+( IMITIVES                            ) 
+EXIT                                    
+: +DROW DROW 1+ TO DROW                 
+     DROW MAX-DROW >                    
+     IF =MORE= THEN ;                   
+: +DCOL DCOL 13 + TO DCOL               
+     DCOL MAX-DCOL >                    
+     IF C-INIT +DROW THEN ;             
+: ..NAME ( -- )                         
+     DCOL DROW XYTAB .NAME +DCOL ;      
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 039
+( DIRECTORY LISTING:  LI\< 0/ 0/ 0>116) 
+( ST-DIRECTORY                        ) 
+CVARIABLE FOUND                         
+: LIST-DIRECTORY  PAGE TEXT             
+   0 0 XYTAB                            
+   0 !FIG#  0 FOUND C!                  
+   BEGIN +FIG                           
+        @FIG# 0= NOT                    
+     WHILE                              
+        ^NAME C@ 0= NOT ( ENTRY? )      
+        IF .NAME 1 FOUND C!             
+         THEN REPEAT                    
+     FOUND C@ NOT                       
+        IF                              
+         ." DISK EMPTY "                
+     THEN ;                             
+: L-D                                   
+    DISK-TO-DIR                         
+    LIST-DIRECTORY =CONTINUE= 1HG       
+    0 20 XYTAB ;                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 040
+(                        < 0/ 0/ 0>117) 
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 041
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>118) 
+( M  GET-NAME                         ) 
+: GET-NAME ( -- 0/1 )                   
+   0 22 XYTAB                           
+   ." ENTER NAME OF PICTURE:" CR        
+   READ-NAME                            
+   NAME-BUFFER C@ 0=                    
+   IF                                   
+   ." NO NAME GIVEN ... "               
+   20 DELAY CL    0                     
+   ELSE 1 THEN ;                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 042
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>119) 
+( M  NO-ROOM                          ) 
+: NO-ROOM                               
+." THERE IS NO MORE ROOM ON THIS DISK " 
+CL                                      
+." PLEASE TRY ANOTHER ONE "             
+ 40 DELAY ;                             
+                                        
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 043
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>120) 
+( M  S-GET-NAME                       ) 
+( GET NAME FOR PICTURE STORE )          
+: S-GET-NAME ( -- 1/0 )                 
+   BEGIN                                
+    GET-NAME NOT IF 0 EXIT THEN (       
+    ( 0: NO NAME )                      
+    FIND-NAME                           
+    WHILE                               
+    ." THERE IS ALREADY A PICTURE BY    
+       THAT NAME "  CR                  
+    ." PLEASE USE ANOTHER NAME "  35    
+    35 DELAY CL REPEAT 1 ;              
+    ( 1: NAME OK )                      
+                             ( 13:54)   
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 044
+(                        < 0/ 0/ 0>121) 
+                                        
+: GETPAR                                
+    @XYMIN @XYMAX                       
+    SET.VP ;                            
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 045
+(                        < 0/ 0/ 0>122) 
+( M  F-GET-NAME                       ) 
+( GET NAME FOR PICTURE FETCH )          
+: F-GET-NAME                            
+   GET-NAME                             
+   IF CR FIND-NAME                      
+   IF GETPAR 1 EXIT                     
+   ELSE                                 
+   HGR  1HG                             
+." NAME NOT FOUND ... " CL              
+  THEN                                  
+  THEN 0 ; ( 0: NO NAME OR NOT FOUND )  
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 046
+(                        < 0/ 0/ 0>123) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 047
+( RUDIMENTARY DISK SYSTEM< 0/ 0/ 0>124) 
+( M  <STORE-PICTURE>                  ) 
+( MOVES PICTURE FROM HOLD AREA TO DISK  
+B )                                     
+: <STORE-PICTURE> ( SCR# NBLOCKS -- )   
+   DUP 0=                               
+   IF DDROP                             
+   ELSE 0 DO                            
+   DUP I +  ONB BLOCK                   
+   HOLDBUF I 1K * +                     
+   SWAP 1K BMOVE                        
+   UPDATE                               
+   LOOP                                 
+   FLUSH DROP                           
+   THEN ;                               
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 048
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>125) 
+( M  DO-STORE-PICTURE                 ) 
+: DO-STORE-PICTURE                      
+   DISK-TO-DIR                          
+   FIND-BLOCK NOT IF NO-ROOM EXIT THEN  
+   S-GET-NAME                           
+   IF                                   
+   @NEXTBLOCK NBLOCKS + 139 >           
+   IF NO-ROOM EXIT THEN                 
+   NEW-ENTRY                            
+   @BLOCK# @SIZE <STORE-PICTURE>        
+   +NEXTBLOCK DIR-TO-DISK               
+   THEN ;                               
+                            ( 13:54)    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 049
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>126) 
+                                        
+( M  STORE.PICTURE                    ) 
+                                        
+ : STORE.PICTURE                        
+    SV.VP CR                            
+." SAVE PICTURE TO DISK" CL             
+    DO-STORE-PICTURE ;                  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 050
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>127) 
+( M  <FETCH-PICTURE>                  ) 
+( MOVES PICTURE FROM DISK B TO HOLD     
+AREA )                                  
+: <FETCH-PICTURE> ( SCR# NBLOCKS -- )   
+   DUP 0=                               
+   IF DDROP                             
+   ELSE EMPTY-BUFFERS                   
+   ( NBLOCKS ) 0 DO                     
+   DUP I + ONB  BLOCK                   
+   HOLDBUF I 1K * +                     
+   1K BMOVE                             
+   LOOP DROP                            
+   THEN ;                               
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 051
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>128) 
+( M  DO-FETCH-PICTURE                 ) 
+: DO-FETCH-PICTURE                      
+   DISK-TO-DIR                          
+   LIST-DIRECTORY FOUND C@              
+   IF                                   
+   F-GET-NAME 1HG                       
+   IF                                   
+   @BLOCK# @SIZE <FETCH-PICTURE>        
+   VXMIN VYMIN  REST.VP                 
+   THEN THEN ;                          
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 052
+( RUDIMENTARY DISK SYSTE\< 0/ 0/ 0>129) 
+( M  FETCH.PICTURE                    ) 
+: FETCH.PICTURE CR                      
+   ." FETCH PICTURE FROM DISK" CL       
+   DO-FETCH-PICTURE ;                   
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 055
+( EXEC-INIT EXEC-ERASE   < 8/ 2/83> 92) 
+VARIABLE R-DRV    VARIABLE R-SLOT       
+VARIABLE W-DRV    VARIABLE W-SLOT       
+                                        
+( ---, <INITIALIZES W-DRV )             
+: EXEC-INIT  CR ." INITIALIZING" CR 0   
+   W-SLOT @ W-DRV @ 0 0 4 1 RWTS ;      
+                                        
+        ( NFA&PFA: 16799 16812 )        
+: EXEC-ERASE  CR ." ERASING" CR FIRST   
+   PAD - PAD OVER BL FILL 0 256 U/MOD   
+   SWAP DROP SECS/TRK TRKS/HD *         
+   HDS/DRV * OVER /MOD 3 ROLL 3 ROLL    
+   SWAP 0 4 ROLL 0                      
+     DO PAD W-SLOT @ W-DRV @ 4 PICK     
+      SECS/TRK /MOD 0 8 PICK RWTS OVER +
+     LOOP SWAP DROP OVER                
+   IF PAD W-SLOT @ W-DRV @ 4 ROLL       
+    SECS/TRK /MOD 0 7 ROLL RWTS         
+   ELSE DDROP THEN ;                    
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 056
+( NORMDISKS INITDISK     < 7/16/83> 93) 
+                                        
+: NORMDISKS  0 R-DRV ! 6 R-SLOT ! 1     
+   W-DRV ! 6 W-SLOT ! ;                 
+                                        
+: INIT-DISK  CR                         
+  6 W-SLOT ! 1 W-DRV !                  
+  EXEC-INIT EXEC-ERASE                  
+  NORMDISKS ;                           
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 057
+( INITDIR                < 8/13/84> 57) 
+                                        
+: INITDIR                               
+  TEXT                                  
+  7 10 XYTAB                            
+  ." WILL ERASE CURRENT DISK!"          
+  2BEEP 2000 20 TONE 2BEEP              
+  10 12 XYTAB                           
+  ." CONTINUE " (Y/N)?                  
+  IF INIT-DISK INIT-DIR DIR-TO-DISK     
+  THEN   1HG                            
+;                                       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               (  0:00) 
+-------------------------------------------- SCREEN 060
+( COMMAND SELECTION     \< 0/ 0/ 0> 83) 
+( COMMAND TABLE                       ) 
+: Q2 UHOH ;                             
+: ?END                                  
+   TEXT PAGE                            
+     5 10 XYTAB                         
+." ARE YOU SURE YOU WANT TO QUIT "      
+   15 12 XYTAB ." Y/N ? "               
+   KEY 89 = IF PAGE                     
+   ." TYPE 'RERUN' TO RETURN " CR CR    
+   ." OK " ABORT THEN 1HG ;             
+                                        
+ CREATE <COMMAND>                       
+   0 ,  ' !1WH , ' !1BL , ' !VIO ,      
+' !GR , ' <BG> , ' !LNE ,               
+' 1D ,  ' 3D ,   ' 5D , ' 7D , ' 9D ,   
+   0 ,                                  
+' LN-3 , ' LN-5 , ' LN-7 ,              
+' LN-9 ,                                
+   0 ,  ' AS-N , ' P1 , ' P2 , ' P3 ,   
+' ?END ,  ' !2WH , ' !2BL ,             
+                                        
+-->                                     
+                                        
+-------------------------------------------- SCREEN 061
+( COMMAND SELECTION     \< 0/ 0/ 0> 84) 
+( COMMAND TABLE                       ) 
+                                        
+                                        
+' !OR , ' !BLU ,    0 , ' !OPEN.CRL ,   
+' !CL.CRL , ' !OPEN.EL , ' !CL.EL ,     
+' !CL.TR ,                              
+' !OP.FR , ' !CL.FR ,                   
+   0 ,    0 ,    0 ,    0 ,             
+' PR-SCR , ' NEXT-SCR ,                 
+' P4 , ' P5 , ' P6 ,                    
+  0  ,   0  ,   0  ,  0   , 0    ,      
+' RESET.VP , ' !SET.VP ,                
+' !SV.VP , ' !CL.VP ,                   
+' !RST.VP , ' !MV.VP ,                  
+' !OLD.VP , ' !SH.VP ,    0 ,           
+' STORE.PICTURE , ' L-D ,               
+' FETCH.PICTURE ,                       
+' INITDIR ,    0 ,    0 ,               
+' REST-PAT ,    0 ,                     
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 062
+( COMMAND SELECTION  DO.\< 0/ 0/ 0> 85) 
+( COMMAND                             ) 
+: DO.COMMAND ( SX SY -- )               
+  COMMAND? ( SX SY -- CMD# )            
+  DUP 0< IF                             
+      ( CMD# ) DROP                     
+  ELSE                                  
+      (  CMD# ) <COMMAND> + @           
+      DUP 0=                            
+      IF DROP Q2                        
+      ELSE PRESSED 9 DELAY CFA          
+      EXECUTE DONE                      
+      THEN                              
+  THEN ;                                
+EXIT                                    
+: ?END                                  
+   TEXT PAGE                            
+     5 10 XYTAB                         
+." ARE YOU SURE YOU WANT TO QUIT "      
+   15 12 XYTAB ." Y/N ? "               
+   KEY 89 = IF PAGE ABORT THEN          
+   1HG ;                                
+                                        
+                                        
+-------------------------------------------- SCREEN 063
+(                        < 0/ 0/ 0> 86) 
+: RERUN 1HG FORGET-SYS                  
+    BEGIN MPR                           
+      IF DDROP                          
+      ELSE PAGE 0 20 XYTAB              
+       DO.COMMAND CR                    
+       ." WAITING FOR NEW COMMAND "     
+      THEN                              
+    AGAIN ;                             
+: RUN TEXT PAGE  10 8  XYTAB            
+    ." PLEASE INSERT : "                
+    4 10 XYTAB                          
+." TEXTURE-DISK --> IN DRIVE A "        
+    4 12 XYTAB                          
+." YOUR PERSONAL DISK --> IN DRIVE B "  
+    9 14 XYTAB                          
+   ." AND PRESS ANY KEY " CL CL         
+   KEY DROP CL INIT-DIR HGR 1HG         
+   TABLET-ON DEFAULT  RESET.VP CL       
+   ." WAITING FOR A COMMAND " CR BEEP   
+   RERUN ;                              
+: TEST-TAB RUN ;                        
+: MYINIT  INIT-DIR DIR-TO-DISK ;        
+                                        

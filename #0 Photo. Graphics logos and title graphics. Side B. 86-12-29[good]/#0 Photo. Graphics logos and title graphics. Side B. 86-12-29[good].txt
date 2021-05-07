@@ -1,0 +1,600 @@
+-------------------------------------------- SCREEN 085
+\ DOLAB TEST FOR RUN    <<11/17/86>225  
+SCREEN DOLABA                           
+BEGIN                                   
+  AT 0 , 131 COLOR 0 BOX 280 , 60       
+  IF DOIT = 5 THEN                      
+   TAREA ATY TY + 10 MGROUP 48          
+   MSG 12 NL MSG 13 NL MSG 14 Y/N?      
+   IF FLAG THEN GOTO IDEALA             
+  ELSE TAREA ATY TY + 10 COLOR 0        
+   BOX 269 , 60 TAREA ATY TY + 10       
+   MSG 18 NL MSG 19 Y/N?                
+   IF NOT FLAG THEN                     
+    GOTO PLABENDA ENDIF                 
+    AT 0 , 130 BOX 279 , 1              
+    AT 140 , 13 BOX 139 , 114           
+    AT 144 , 40 COLOR 3 BOX 132 , 85    
+    AT 42 , 70 GRAPHIC 10               
+    AT 42 , 15 GRAPHIC 12               
+    LET DOIT := 0 LET TEMPERA := 0      
+    LET LGT := 0                        
+    RETURN                              
+   ENDIF                                
+  ENDIF                                 
+END                                     
+-------------------------------------------- SCREEN 086
+\ LIGHT/TEMP SET?       <11/17/86>226   
+\ tests to make sure that both a light  
+\ intensity and TEMP are selected       
+                                        
+BEGIN                                   
+ IF ( TEMPERA <> 1 ) OR ( LGT <> 1 )    
+  THEN AT 72 , PY - 4 COLOR 10          
+  BOX 131 , 1 MGROUP 54                 
+  TAREA ATY TY + 10                     
+  MSG 6 NL MSG 7 NL MSG 8               
+  PAREA ATX 140 CENTERED MSG 48 , 20    
+  WAITKEY 21                            
+  RETURN                                
+ ENDIF                                  
+                                        
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 087
+\ RUN EXPERIMENT         <11/17/86>227  
+\ VARIABLE INT VOL/MAN                  
+\ VARIABLE INT DOIT                     
+BEGIN                                   
+ AT 248 , 18 PRINT "60"                 
+\ IF VOL/MAN = 2 THEN                   
+\  AT 62 , 21 COLOR 3 \ fill manometer  
+\  BOX 19 , 43 ENDIF                    
+ AT 82 , PY - 4 COLOR 10 BOX 119 , 1    
+ PAREA ATX 140 CENTERED MSG 48 , 4      
+ TAREA ATY TY + 10 MGROUP 48            
+  MSG 1 NL MSG 2 NL MSG 3               
+ WAITKEY 21                             
+ AT 0 , 131 COLOR 0 BOX 280 , 60        
+ RUN-EXPER MODE 5                       
+ LET DOIT := DOIT + 1                   
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 088
+\ ENTER DATA             <11/17/86>228  
+\ records results                       
+                                        
+BEGIN                                   
+ TAREA ATY TY + 10 COLOR 0 BOX 269 , 60 
+ AT 39 , PY - 4 COLOR 10 BOX 206 , 1    
+ PAREA ATX 140 CENTERED                 
+ MGROUP 48 MSG 17                       
+ TAREA ATY TY + 10 MSG 15 NL MSG 16     
+ MODE 3 GET-RESULT MODE 5               
+ IF FLAG THEN                           
+   GOSUB BADBUB                         
+  REPEAT                                
+ ELSE MODE 5                            
+  NEXT-EXPER                            
+\ IF FLAG THEN NEXT-SERIES ENDIF        
+ ENDIF                                  
+ AT 0 , 131 COLOR 0 BOX 280 , 60        
+ RETURN                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 091
+\ EXIT SEQUENCE          <11/17/86>231  
+                                        
+\ TEST TO SEE IF ENOUGH TRIALS TO EXIT  
+SCREEN ENDLABA                          
+BEGIN                                   
+  IF DOIT = 5 THEN LET DOIT := 0        
+   LET TEMPERA := 0                     
+   LET LGT := 0                         
+   TAREA ATY TY + 10 MGROUP 48          
+   MSG 12 NL MSG 13 NL MSG 14 Y/N?      
+   IF FLAG THEN GOTO IDEALA ENDIF       
+  ENDIF                                 
+  IF DOIT = 0 THEN                      
+   TAREA ATY TY + 10 MGROUP 49          
+   MSG 15 NL MSG 16 NL MSG 17 Y/N?      
+   IF FLAG THEN LET SET := 0            
+     LET LGT := 0 LET VOL/MAN := 0      
+     GOTO MMENU ELSE                    
+     GOTO PLABMENUA                     
+   ENDIF                                
+  ENDIF                                 
+                                        
+NEXT                                    
+                               \ FAH    
+-------------------------------------------- SCREEN 092
+\ EXIT TESTS CONT.       <11/17/86>232  
+                                        
+                                        
+  TAREA ATY TY + 10 MGROUP 49 MSG 11    
+  NL MSG 12 NL MSG 13 NL MSG 14 Y/N?    
+  IF FLAG THEN LET DOIT := 0            
+   LET SET := 0 LET VOL/MAN := 0        
+   LET LGT := 0                         
+   GOTO MMENU ELSE                      
+   GOTO PLABMENUA                       
+  ENDIF                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 093
+\ COMPARE TO IDEAL       <11/17/86>233  
+                                        
+SCREEN IDEALA                           
+BEGIN                                   
+ TAREA ATY TY + 10 COLOR 0 BOX 269 , 60 
+ AT 72 , PY - 4 COLOR 10 BOX 131 , 1    
+ PAREA ATX 140 CENTERED MSG 48 , 20     
+ AT 138 , 40 COLOR 3 BOX 138 , 85       
+ AT 210 , 45 MODE 3 COLOR 0             
+ BOX 25 , 60 AT 150 , 65                
+ PRINT "Student's and ideal" NL         
+ PRINT "curves will appear" NL          
+ PRINT "here." MODE 5                   
+ WAITKEY 21                             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 094
+\ CONCLUDING QUESTIONS   <11/17/86>234  
+\ SCREEN PLABEND                        
+\ BEGIN CLS MARK                        
+\ AT 0 , 10 COLOR 2 BOX 279 , 1         
+\ AT 0 , 100 BOX 279 , 1                
+\ AT 65 , 13 COLOR 3 BOX 142 , 85       
+\ AT 95 , 33 GRAPH-POS                  
+\ DRAW-GRAPH CLEAR-GRAPH                
+\ PLOT-RESULTS GRAPH-RESULTS            
+\ AT 50 , PY - 4 COLOR 10 BOX 181 , 1   
+\ PAREA ATX 140 CENTERED MSG 1 , 9      
+\ LET P/L := 10                         
+\ TAREA ATY TY - 20 MGROUP 52           
+\ PRINT "YOUR HYPOTHESIS:" NL           
+\ ATY CURY + 5                          
+\ IF HYPO = 1 THEN MSG 15 NL MSG 16     
+\ NL ENDIF                              
+\ IF HYPO = 2 THEN MSG 17 NL MSG 18     
+\ NL MSG 19 NL ENDIF                    
+\ IF HYPO = 3 THEN MSG 20 NL MSG 21 NL  
+\ MSG 22 NL MSG 23 ENDIF                
+\ AT 50 , CURY + 2 MGROUP 50 MSG 1 NL   
+\ MSG 2 Y/N? LET P/L := 11              
+\ END \ NEXT                     \ FAH  
+-------------------------------------------- SCREEN 095
+\ HYPO ? RIGHT/WRONG?    <11/17/86>235  
+                                        
+\ BEGIN                                 
+\ TAREA ATY TY - 20 COLOR 0 BOX 269 ,   
+\ 90 TAREA ATY TY - 20 MGROUP 50        
+\  IF FLAG THEN                         
+\  IF HYPO = 2 THEN LET COR := 1        
+\  GOTO HYPOK ENDIF                     
+\  IF HYPO = 1 THEN MSG 19 NL MSG 20    
+\    NL MSG 21 NL MSG 22 NL MSG 23      
+\    ELSE                               
+\    MSG 24 NL MSG 25 NL MSG 26         
+\    NL MSG 27 NL MSG 28                
+\  ENDIF                                
+\  WAITKEY 21 DOMARK                    
+\  GOMARK                               
+\ ENDIF                                 
+\ END                                   
+\                                       
+\ BEGIN                                 
+\ GOTO HYPOK                            
+\ END                                   
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 096
+\ EMPTY                  <11/17/86>236  
+\ VARIABLE INT HYPO                     
+\ BEGIN                                 
+\ IF HYPO = 2 THEN MGROUP 50            
+\   MSG 29 NL MSG 25 NL MSG 26 NL       
+\   MSG 27 NL MSG 28                    
+\ ELSE CLS MGROUP 45                    
+\   AT 0 , 10 COLOR 2 BOX 279 , 1       
+\   AT 0 , 100 BOX 279 , 1              
+\   AT 43 , PY - 4 COLOR 10 BOX 194 , 1 
+\   PAREA ATX 140 CENTERED MSG 1 , 11   
+\   AT 8 , 13 PRINT "1."                
+\   AT 20 , 13 IF HYPO = 1 THEN         
+\   MSG 33 NL MSG 34                    
+\    ELSE MSG 28 NL MSG 29              
+\    NL MSG 45 ENDIF                    
+\   NL NL ATX 8 PRINT "2." ATX 20       
+\   MSG 30 NL MSG 31 NL MSG 32          
+\   TAREA ATY TY - 20 MGROUP 50         
+\   MSG 3 NL MSG 4 NL                   
+\   SET-RANGE 1 , 2                     
+\   INPUT HYPO                          
+\ ENDIF                                 
+\ END                           \ FAH   
+-------------------------------------------- SCREEN 097
+\ 2ND HYPO R/W           <11/17/86>237  
+                                        
+\ BEGIN                                 
+\ IF HYPO = 2 THEN LET COR := 1         
+\  SCREEN-DONE ENDIF                    
+\ TAREA ATY TY - 20 COLOR 0             
+\ BOX 269 , 90                          
+\ TAREA ATY TY - 20 MGROUP 50           
+\ MSG 24 NL MSG 25 NL MSG 26            
+\ NL MSG 27 NL MSG 28                   
+\ DOMARK                                
+\ GOMARK                                
+\ END                                   
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 098
+\ HYPOK                  <11/17/86>238  
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 0 , 100 BOX 279 , 1                
+  AT 46 , PY - 4 COLOR 10 BOX 191 , 1   
+  AT 14 , 20 GRAPHIC 64 MODE 3          
+  AT 19 , 75 PRINT "1"                  
+  AT 104 , 75 PRINT "2"                 
+  AT 193 , 75 PRINT "3" MODE 5          
+  PAREA ATX 140 CENTERED MSG 1 , 11     
+  TAREA ATY TY - 20 MGROUP 55           
+  MSG 1 NL MSG 2 NL MSG 3               
+  ATX CURX + 5 SET-RANGE 1 , 3          
+  INPUT GRPH  END                       
+BEGIN                                   
+ TAREA ATY TY - 20 COLOR 0 BOX 269 , 90 
+ MGROUP 50 IF GRPH = 2 THEN             
+   MSG 14 ELSE MSG 55 , 4  ENDIF        
+ DOMARK GOMARK                          
+END                                     
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 099
+\ SELECT HYPO            <11/17/86>239  
+BEGIN MARK CLS                          
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 46 , PY - 4 COLOR 10 BOX 191 , 1   
+  AT 140 , PY CENTERED MSG 1 , 10       
+  AT 10 , 15 MGROUP 55 MSG 5 NL MSG 6   
+  NL NL                                 
+  LET M-OFFS := -10                     
+  MGROUP 52 START-MENU                  
+  MENU-ITEM MSG 15 NL MSG 16 NL         
+   ATY LASTY + 7                        
+  IF-SELECTED GOTO NOT1 DONE MEXIT      
+  MENU-ITEM MSG 17 NL MSG 18 NL MSG 19  
+   NL ATY LASTY + 7                     
+  IF-SELECTED GOTO YES DONE MEXIT       
+  MENU-ITEM MSG 20 NL MSG 21 NL MSG 22  
+   NL MSG 23                            
+  IF-SELECTED GOTO NOT2 DONE MEXIT      
+  DO-MENU                               
+END                                     
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 100
+\ SCREEN NOT1            <11/17/86>240  
+SCREEN NOT1                             
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 10 , 15 MGROUP 55 MSG 16 NL MSG 17 
+  NL MSG 18 NL MSG 19 NL MSG 20 NL      
+  GOTO LASTQ                            
+END                                     
+                                        
+SCREEN NOT2                             
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 10 , 15 MGROUP 55 MSG 21 NL MSG 22 
+  NL MSG 23 NL MSG 24 NL                
+  GOTO LASTQ                            
+END                                     
+SCREEN YES                              
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 10 , 15 MGROUP 55 MSG 7 NL MSG 8   
+  NL                                    
+END                                     
+                                        
+                                        
+-------------------------------------------- SCREEN 101
+\ STATEMENT TRUE\FALSE   <11/17/86>241  
+                                        
+SCREEN LASTQ                            
+BEGIN NL                                
+  MGROUP 55                             
+  MSG 9 NL MSG 10 NL MSG 11 NL MSG 12   
+  NL MSG 13 NL                          
+  ATX CURX + 20 LET M-OFFS := -10       
+  START-MENU                            
+  MENU-ITEM MSG 14 NL                   
+  IF-SELECTED LET TINT := 4 DONE MEXIT  
+  MENU-ITEM MSG 15 NL                   
+  IF-SELECTED DONE MEXIT                
+  AT 46 , PY - 4 COLOR 10 BOX 191 , 1   
+  AT 140 , PY CENTERED MSG 1 , 10       
+  DO-MENU                               
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 102
+\ TRU\ FALSE RESPONSE    <11/17/86>242  
+                                        
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 10 , 15 MGROUP 55                  
+  IF TINT = 4 THEN MSG 25 NL MSG 26 NL  
+   MSG 27 NL MSG 28 NL MSG 29 NL        
+  ELSE MSG 30 NL MSG 31 NL MSG 32 NL    
+   MSG 33 NL MSG 34 NL MSG 35 NL MSG 36 
+  ENDIF                                 
+  DOMARK GOMARK                         
+END                                     
+                                        
+BEGIN                                   
+  GOTO MMENU                            
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 104
+\ SEE SETUP              <11/17/86>242  
+                                        
+SCREEN SEESETA                          
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 280 , 1         
+  AT 0 , 130 BOX 279 , 1                
+  AT 42 , 70 GRAPHIC 10                 
+  AT 42 , 15 GRAPHIC 12                 
+  AT 125 , 50 PRINT "BEAKER"            
+  AT 120 , 55 COLOR 6 BOX -30 , 1       
+  AT 125 , 90 PRINT "ELODEA sp."        
+  AT 125 , CURY + 10 COLOR 2 BOX 40 , 1 
+  AT 120 , 95 COLOR 6 BOX -50 , 1       
+  AT 72 , PY - 4 COLOR 10               
+  BOX 131 , 1                           
+  PAREA ATX 140 CENTERED MSG 48 , 20    
+  TAREA ATY TY + 10 MGROUP 47 MSG 1     
+  NL MSG 2                              
+  WAITKEY 21                            
+  RETURN                                
+END                                     
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 105
+\ HELP                   <11/17/86>243  
+\ VARIABLE INT VOL/MAN                  
+SCREEN HELPA                            
+BEGIN \ LET VOL/MAN := 2 GOSUB REDRAW   
+  AT 190 , 10 COLOR 0 BOX 84 , 35       
+  AT LASTX + 2 , LASTY                  
+  COLOR 3 FRAME 80 , 33 , 1             
+  START-MENU                            
+   AT LASTX + 8 , LASTY + 2 MENU-ITEM   
+   PRINT "Commands" BAR-LEN 76          
+   IF-SELECTED GOSUB HELP1              
+   MEXIT                                
+   AT LASTX , LASTY + 10 MENU-ITEM      
+   PRINT "Procedure" BAR-LEN 76         
+   IF-SELECTED GOSUB HELP2              
+   MEXIT                                
+   AT LASTX , LASTY + 10 MENU-ITEM      
+   PRINT "Theory" BAR-LEN 76            
+   IF-SELECTED GOSUB THEORY             
+   MEXIT                                
+  DO-MENU4                              
+END NEXT                                
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 106
+\ HELP CONT.             <11/17/86>244  
+                                        
+SCREEN REDRAWA                          
+BEGIN                                   
+  CLS MODE 5 COLOR 2                    
+                                        
+  AT 0 , 10 BOX 279 , 1                 
+  AT 0 , 130 BOX 279 , 1                
+  AT 135 , 13 BOX 144 , 114             
+  AT 138 , 40 COLOR 3 BOX 138 , 85      
+  AT 42 , 70  GRAPHIC 10                
+  AT 42 , 15 GRAPHIC 12                 
+  AT 142 , 55 COLOR 0 BOX 129 , 1       
+  AT 200 , 42 BOX 1 , 80                
+  AT 238 , 15 BOX 35 , 23               
+  AT 248 , 18 MSG 56 , 30               
+                                        
+                                        
+NEXT                                    
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 107
+\ REESTABLISH GRAPHICS   <11/17/86>245  
+                                        
+  AT 246 , 27 PRINT "sec."              
+  AT 142 , 15 COLOR 3 BOX 45 , 23       
+  AT 142 , 15 COLOR 0 FRAME 45 , 23 , 2 
+  AT 158 , 27 PRINT "uE"                
+  AT 149 , 42 MODE 3 PRINT "uE"         
+  AT 210 , 42 BOX 40 , 12               
+  AT 210 , 42 MSG 56 , 91               
+  PRINT "/min." MODE 3                  
+  PR-INTS PR-RESULTS MODE 5             
+  RETURN                                
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 108
+\ HELP1                  <11/21/86>248  
+                                        
+SCREEN HELP1A                           
+BEGIN                                   
+  CLS MODE 5 COLOR 2                    
+  AT 0 , 10 BOX 279 , 1                 
+  AT 70 , PY - 4 COLOR 10 BOX 141 , 1   
+  PAREA ATX 140 CENTERED MSG 48 , 20    
+  AT 15 , 22 MGROUP 51                  
+  MSG 3 NL MSG 4 NL                     
+  ATY LASTY + 6                         
+  MSG 5 NL MSG 6 NL                     
+  ATY LASTY + 6                         
+  MSG 7 NL MSG 8 NL MSG 9 NL            
+  ATY LASTY + 6                         
+  MSG 10 NL MSG 11 NL                   
+  ATY LASTY + 6                         
+  MSG 12 NL MSG 13 NL                   
+  WAITKEY 21                            
+  RETURN                                
+END                                     
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 109
+\ HELP2                  <11/21/86>249  
+                                        
+SCREEN HELP2A                           
+BEGIN CLS                               
+  AT 0 , 10 COLOR 2 BOX 279 , 1         
+  AT 70 , PY - 4 COLOR 10 BOX 141 , 1   
+  PAREA ATX 140 CENTERED MSG 48 , 20    
+  AT 10 , 20 MGROUP 45 MSG 35           
+  NL NL                                 
+  MSG 36 NL ATY CURY + 7                
+  MSG 37 NL ATY CURY + 7                
+  MSG 38 NL MSG 39 NL ATY CURY + 7      
+  MSG 40 NL ATY CURY + 7                
+  MSG 41 NL MSG 42 NL MSG 43 NL MSG 44  
+  WAITKEY 21                            
+  RETURN                                
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 110
+\                        <11/21/86>250  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    
+-------------------------------------------- SCREEN 111
+\                        <11/21/86>251  
+                                        
+                                        
+PAUSE-COMP                              
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               \ FAH    

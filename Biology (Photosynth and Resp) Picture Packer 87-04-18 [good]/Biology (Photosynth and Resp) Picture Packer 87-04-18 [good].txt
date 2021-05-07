@@ -1,0 +1,1500 @@
+-------------------------------------------- SCREEN 003
+( DIRECTORY              < 0/ 0/ 0>143) 
+  INEQUALITIES IN ONE VARIATION         
+                                        
+                                        
+                                        
+SCR 186 187 THRU   PG.15                
+SCR 188 192 THRU   PG.16                
+SCR 193 197 THRU   PG.17                
+SCR 198 203 THRU   PG.18                
+SCR 204 209 THRU   PG.19                
+SCR 210 211 THRU   PG.20                
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 031
+( PG.7 INEQ ONE VAR      < 0/ 0/ 0>171) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 032
+( PG.7 INEQ ONE VAR      < 0/ 0/ 0>172) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 033
+( PG.8 INEQ ONE VAR      < 0/ 0/ 0>173) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 326 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 034
+( PG.9 INEQ ONE VAR      < 0/ 0/ 0>174) 
+DIR NEXT                                
+FORMAT 18 COLOR 5                       
+NOGRAPH RUN 0                           
+DOES                                    
+  MSG 315 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 328 AT 20 60 TCODE 1              
+  MSG 329 AT +60 S                      
+  MSG  S AT S +15                       
+  MSG  S AT S +15                       
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 035
+( PG.10 INEQ ONE VAR     < 0/ 0/ 0>175) 
+DIR NEXT                                
+  FORMAT 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 330 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 332 AT 40 50                      
+  MSG  +1 AT S +15                      
+  MSG  +1 AT S +15                      
+  MSG  +1 AT S +15                      
+  GRAPHIC 18 AT 0 60                    
+  MSG 60 AT 100 139 TCODE 1             
+  MSG 336 AT 0 154                      
+  PUTBAR 4 AT 0 154 DIM 90 15           
+  MSG 33 AT 0 154 TCODE 3               
+  MSG 61 AT S +10                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 036
+(  PG.10 INEQ ONE VAR    < 0/ 0/ 0>176) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 037
+( PG.10 INEQ ONE VAR     < 0/ 0/ 0>177) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 038
+( PG.10 INEQ ONE VAR     < 0/ 0/ 0>178) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 039
+( PG.10 INEQ ONE VAR     < 0/ 0/ 0>179) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 040
+( PG.10 INEQ ONE VAR     < 0/ 0/ 0>180) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 041
+( PG.11 INEQ ONE VAR     < 0/ 0/ 0>181) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 4 AT 0 40                     
+  PUTBAR 3 AT 22 1 DIM 60 40            
+  GRAPHIC 25 AT 27 41                   
+  GRAPHIC 9 AT 100 40                   
+  MSG 337 AT 25 5 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  PUTBAR 0 AT 22 1 DIM 60 55            
+  PUTBAR 3 AT 85 1 DIM 50 40            
+  GRAPHIC 25 AT 119 41                  
+  MSG 340 AT 88 5 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+-->                                     
+                                        
+                                        
+-------------------------------------------- SCREEN 042
+( PG.11 INEQ ONE VAR     < 0/ 0/ 0>182) 
+                                        
+  PUTBAR 3 AT 7 1 DIM 65 40             
+  GRAPHIC 25 AT 27 41                   
+  MSG 400 AT 10 5 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31                        
+  PUTBAR 0 AT 85 1 DIM 50 40            
+  PUTBAR 0 AT 119 41 DIM 20 30          
+  PUTBAR 0 AT 7 1 DIM 65 40             
+  PUTBAR 0 AT 27 41 DIM 20 30           
+-->                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 043
+( PG.12 INEQ ONE VAR     < 0/ 0/ 0>183) 
+                                        
+  PUTBAR 0 AT 0 40 DIM 30 130           
+  GRAPHIC 24 AT 98 45                   
+  PUTBAR 3 AT 0 18 DIM 98 59            
+  MSG 343 AT 2 27 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 044
+( PG.13 INEQ ONE VAR     < 0/ 0/ 0>184) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 110                  
+  PUTBAR 3 AT 33 20 DIM 100 90          
+  MSG 347 AT 37 29 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 068
+( PG.19                  < 0/ 0/ 0>208) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 069
+( PG.19                  < 0/ 0/ 0>209) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 070
+( PG.20 INEQ ONE VAR     < 0/ 0/ 0>210) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 12 AT 10 0                    
+  GRAPHIC 13 AT 6 105                   
+  GRAPHIC 14 AT 20 130                  
+  MSG 394 AT 33 139                     
+  MSG 387 AT 29 40 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT +5 +10 TCODE 1             
+  MSG  +1 AT +5 +10 TCODE 1             
+  MSG  +1 AT +5 +10 TCODE 1             
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 071
+(                        < 7/11/85>211) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 072
+( PG 1 CONJUNCTIONS      < 7/11/85>212) 
+DIR NEXT                                
+  FORMAT 14                             
+  COLOR 14                              
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 7 AT 0 70                     
+  MSG 298 AT 62 12                      
+  MSG 70 AT -15 +25                     
+  PUTBAR 3 AT S +10 DIM 27 1            
+  MSG 299 AT S +2                       
+  MSG 300 AT S +15                      
+  PUTBAR 3 AT S +10 DIM 18 1            
+  MSG 301 AT S +2                       
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 301 AT S +10                      
+  MSG 304 AT S +10                      
+  MSG  76 AT S +15                      
+  PUTBAR 3 AT S +10 DIM 30 1            
+  MSG  +1 AT S +2                       
+  MSG  +1 AT S +10                      
+  MSG 31 AT 30 175                      
+-->                            ( GRW)   
+-------------------------------------------- SCREEN 073
+( PG 1 CONJUNCTIONS      < 7/11/85>213) 
+                                        
+  NOMSG RESP 24                         
+  END                                   
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 074
+( PG.2 CONJUNCTIONS      < 7/11/85>214) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 100                  
+  PUTBAR 3 AT 33 20 DIM 100 80          
+  MSG 414 AT 39 29 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 075
+( PG.3 CONJUNCTIONS      < 7/11/85>215) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 420 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 422 AT 45 40                      
+  LINEWIDTH 1 BOX 6 AT 80 37            
+  DIM 110 15                            
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 076
+( PG.4 CONJUNCTIONS      < 7/11/85>216) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 423 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 425 AT 45 40                      
+  LINEWIDTH 1 BOX 6 AT 80 37            
+  DIM 120 15                            
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 077
+( PG.5 CONJUNCTIONS      < 7/11/85>217) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 426 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 428 AT 47 40                      
+  LINEWIDTH 1 BOX 6 AT 80 37            
+  DIM 120 15                            
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 078
+( PG.6 CONJUNCTIONS      < 7/11/85>218) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 110                  
+  PUTBAR 3 AT 33 20 DIM 100 90          
+  MSG 429 AT 39 29 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 079
+( PG.7 CONJUNCTIONS      < 7/11/85>219) 
+                                        
+DIR NEXT                                
+  FORMAT 19 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 436 AT 0 0                        
+  MSG  +1 AT 30 40                      
+  MSG  +1 AT S +15                      
+  MSG  +1 AT S +15                      
+  MSG 61 AT 0 164                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 080
+( PG.8 CONJUNCTION       < 7/11/85>220) 
+                                        
+DIR NEXT                                
+  FORMAT 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 440 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 31 AT 0 154                       
+  PUTBAR 0 AT 0 154 DIM 91 15           
+  MSG 33 AT 0 154                       
+  MSG 61 AT S +10                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 081
+( PG.8                   < 7/11/85>221) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 082
+( PG.8                   < 7/11/85>222) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 083
+( PG.8                   < 7/11/85>223) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 084
+( PG.8                   < 7/11/85>224) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 085
+( PG.9 CONJUNCTIONS      < 7/11/85>225) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 442 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 329 AT 80 50                      
+  GRAPHIC 15 AT 115 50                  
+  NOMSG TCODE 33                        
+  MSG 60 AT 100 139 TCODE 1             
+  MSG 35 AT 0 154                       
+  PUTBAR 0 AT 0 154 DIM 80 15           
+  MSG 33 AT 0 154 TCODE 3               
+  MSG 61 AT S +10                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 087
+( PG.9                   < 7/11/85>227) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 088
+( PG.9                   < 7/11/85>228) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 089
+( PG.9                   < 7/11/85>229) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 090
+( PG.10 CONJUNCTIONS     < 7/11/85>230) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 442 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 329 AT 80 50                      
+  GRAPHIC 15 AT 115 50                  
+  NOMSG TCODE 33                        
+  MSG 60 AT 100 139 TCODE 1             
+  MSG 35 AT 0 154                       
+  PUTBAR 0 AT 0 154 DIM 80 15           
+  MSG 33 AT 0 154 TCODE 3               
+  MSG 61 AT S +10                       
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 091
+( PG.11                  < 7/11/85>231) 
+                                        
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 445 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 61 AT 0 154                       
+  MSG +1 AT S +10                       
+-->                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 092
+( PG.12 CONJUNCTIONS     < 7/11/85>232) 
+                                        
+  MSG 447 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 093
+( PG.13                  < 7/11/85>233) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 12 AT 10 0                    
+  GRAPHIC 13 AT 6 105                   
+  GRAPHIC 14 AT 20 130                  
+  MSG 394 AT 33 139                     
+  MSG 450 AT 35 60 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 097
+( PG.16                  < 7/11/85>237) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 12 AT 10 0                    
+  GRAPHIC 13 AT 6 105                   
+  GRAPHIC 14 AT 20 130                  
+  MSG 394 AT 33 139                     
+  MSG 467 AT 30 40 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 098
+( PG.17                  < 7/11/85>238) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 8 AT 10 40                    
+  GRAPHIC 4 AT 55 S                     
+  GRAPHIC 23 AT 80 30                   
+  PUTBAR 3 AT 84 20 DIM 45 40           
+  MSG 473 AT 86 24 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  PUTBAR 0 AT 78 20 DIM 54 40           
+  GRAPHIC 23 AT 46 15                   
+  PUTBAR 3 AT 52 0 DIM 50 40            
+  MSG 476 AT 54 4 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+-->                                     
+-------------------------------------------- SCREEN 099
+( PG.17 CONT.            < 7/11/85>239) 
+                                        
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 100
+( PG.18                  < 7/11/85>240) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 479 AT 0 4                        
+  MSG  +1 AT S +10                      
+  GRAPHIC 18 AT 0 50                    
+  MSG 60 AT 100 149 TCODE 1             
+  MSG 31 AT 0 164                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 101
+( PG 19 PART I           < 7/12/85>241) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR  5  AT  0  4 DIM 140 1         
+  GRAPHIC 11 AT  0  5                   
+  GRAPHIC S  AT  21 S                   
+  PUTBAR  4  AT  0  S DIM 20 12         
+  GRAPHIC S  AT  42 S                   
+  PUTBAR  S  AT  21 S DIM  S  S         
+  GRAPHIC S  AT  63 S                   
+  PUTBAR  S  AT  42 S DIM  S  S         
+  GRAPHIC S  AT  84 S                   
+  PUTBAR  S  AT  63 S DIM  S  S         
+NOMSG TCODE 31                          
+  PUTBAR  S  AT 105 S DIM  S  S         
+  GRAPHIC 24 AT 100 80                  
+  PUTBAR 3 AT 60 70 DIM 38 40           
+  MSG 481 AT 63 74 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+-->                                     
+-------------------------------------------- SCREEN 102
+( PG.19                  < 7/11/85>242) 
+                                        
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+-------------------------------------------- SCREEN 103
+( PG 1 INEQ TWO VAR      < 7/11/85>243) 
+DIR NEXT                                
+  FORMAT 14                             
+  COLOR 14                              
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 7 AT 0 70                     
+  MSG 298 AT 62 12                      
+  MSG 70 AT -15 +25                     
+  PUTBAR 3 AT S +10 DIM 27 1            
+  MSG 299 AT S +2                       
+  MSG 300 AT S +15                      
+  PUTBAR 3 AT S +10 DIM 18 1            
+  MSG 301 AT S +2                       
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 301 AT S +10                      
+  MSG 304 AT S +10                      
+  MSG  76 AT S +15                      
+  PUTBAR 3 AT S +10 DIM 30 1            
+  MSG  +1 AT S +2                       
+  MSG  +1 AT S +10                      
+  MSG 31 AT 30 175                      
+-->                            ( GRW)   
+-------------------------------------------- SCREEN 104
+( PG.1 INEQ TWO VAR      < 7/11/85>244) 
+                                        
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 105
+( PG.2 INEQ IN TWO VAR   < 7/11/85>245) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 110                  
+  PUTBAR 3 AT 33 20 DIM 100 90          
+  MSG 484 AT 37 29 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 61 AT 75 164                      
+  MSG +1 AT S +10                       
+  NOMSG RESP 24                         
+END                                     
+                                        
+                                        
+                                        
+                               ( GRW)   
+-------------------------------------------- SCREEN 106
+( PG.3                   < 7/11/85>246) 
+                                        
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 491 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  MSG 494 AT 80 44                      
+  MSG   1 AT +13 -6                     
+  PUTBAR 3 AT -1 +10 DIM 5 1            
+  MSG 2 AT +1 +2                        
+  MSG 495 AT +7 44                      
+  PUTBAR 9 AT 73 70 DIM 5 8             
+  MSG 496 AT 80 70                      
+  MSG  +1 AT S +10                      
+  PUTBAR 11 AT 73 95 DIM 5 8            
+  MSG  +1 AT +7 S                       
+  MSG 497 AT S +10                      
+-->                                     
+                                        
+-------------------------------------------- SCREEN 108
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+-------------------------------------------- SCREEN 109
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+-------------------------------------------- SCREEN 110
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+-------------------------------------------- SCREEN 112
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 113
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 114
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 115
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 116
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 117
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-------------------------------------------- SCREEN 118
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
