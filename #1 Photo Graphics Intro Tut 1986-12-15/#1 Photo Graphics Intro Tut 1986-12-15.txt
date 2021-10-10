@@ -1,0 +1,2625 @@
+════════════════════════════════════════   SCREEN 034
+( PG.21 FUNCT/LIN EQ     < 0/ 0/ 0>174) 
+                                        
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 659 AT 0 0                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  PUTBAR 6 AT 10 45                     
+  DIM 5 8                               
+  MSG 662 AT 17 S                       
+  MSG  +1 AT +15 +20                    
+  MSG  +1 AT +11 +20                    
+  MSG 665 AT +4 +25                     
+  MSG  +1 AT +12 -6                     
+  PUTBAR 3 AT S +10 DIM 5 1             
+  PUTBAR 3 AT +16 S DIM 5 1             
+  MSG 526 AT -9 -4                      
+  MSG 700 AT -7 +7                      
+  MSG 18 AT +23 -8                      
+-->                                     
+                                        
+                                        
+════════════════════════════════════════   SCREEN 035
+( PG.21 FUNCT/LIN EQ     < 0/ 0/ 0>175) 
+                                        
+                                        
+  MSG 665 AT 47 136                     
+  MSG 508 AT +13 -6                     
+  MSG 8 AT +26 S                        
+  PUTBAR 3 AT -24 +10 DIM 5 1           
+  PUTBAR 3 AT +23 S DIM 5 1             
+  MSG 18 AT 69 135                      
+  MSG 527 AT +9 +1                      
+  MSG 7 AT -15 +7                       
+  MSG S AT +23 S                        
+  MSG 667 AT 0 164                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 036
+( PG.22 FUNCT/LIN EQ     < 0/ 0/ 0>176) 
+DIR NEXT                                
+  FORMAT 19 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  MSG 665 AT 75 40                      
+  MSG 508 AT +13 -6                     
+  MSG   8 AT +26 S                      
+  PUTBAR 3 AT -24 +10 DIM 5 1           
+  PUTBAR 3 AT +23 S  DIM 5 1            
+  MSG 18 AT 97 40                       
+  MSG 527 AT +9 +1                      
+  MSG 7 AT -15 +7                       
+  MSG S AT +23 S                        
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 037
+( PG.23 FUNCT/LIN EQ     < 0/ 0/ 0>177) 
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 659 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  PUTBAR 6 AT 10 45 DIM 5 8             
+  MSG 702 AT 17 S                       
+  MSG 668 AT +15 +20                    
+  MSG  +1 AT S +20                      
+  MSG 665 AT +4 +25                     
+  MSG 670 AT +12 -6                     
+  PUTBAR 3 AT S +10 DIM 7 1             
+  MSG 2 AT S +3                         
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 038
+(  PG.23 FUNCT/LIN EQ    < 0/ 0/ 0>178) 
+                                        
+                                        
+  MSG 665 AT -12 +21                    
+  MSG 670 AT +12 -6                     
+  PUTBAR 3 AT S +10 DIM 7 1             
+  MSG 2 AT S +3                         
+  MSG 527 AT +10 -7                     
+  MSG 10 AT +7 S                        
+  MSG 667 AT 0 164                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 039
+( PG.24 FUNCT/LIN EQ     < 0/ 0/ 0>179) 
+                                        
+DIR NEXT                                
+  FORMAT 19 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  MSG 665 AT 85 60                      
+  MSG 3   AT +12 -6                     
+  PUTBAR 3 AT S +10                     
+  DIM 4 1                               
+  MSG 2 AT S +3                         
+  MSG 18 AT +5 -8                       
+  MSG 527 AT +7 +1                      
+  MSG 10 AT +8 S                        
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 040
+( PG.25 FUNCT/LIN EQ     < 0/ 0/ 0>180) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  MSG 671 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 804 AT 74 50                      
+  MSG 674 AT +18 +16                    
+  MSG  +1 AT -2 +16                     
+  MSG  +1 AT +2 +16                     
+  MSG  +1 AT 0 164                      
+  NOMSG TCODE 33                        
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 041
+( PG.26 FUNCT/LIN EQ     < 0/ 0/ 0>181) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 97                   
+  PUTBAR 3 AT 38 28                     
+  DIM 90 70                             
+  MSG 679 AT 40 35 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S  +10                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 042
+( PG.27                  < 0/ 0/ 0>182) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  MSG 684 AT 0 0                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT 90 40                      
+  MSG  +1 AT S +15                      
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +15                      
+  MSG  +1 AT S +10                      
+  MSG 677 AT 0 164                      
+  NOMSG TCODE 33                        
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 043
+( PG.28 FUNCT/LIN EQ     < 0/ 0/ 0>183) 
+                                        
+DIR NEXT                                
+  FORMAT 20 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  LINEWIDTH 1 BOX 3 AT 10 40            
+  DIM 115 100                           
+  GRAPHIC 37 AT 128 58                  
+  PUTBAR 3 AT 88 48                     
+  DIM 38 55                             
+  MSG 693 AT 92 54 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT S 164                      
+  MSG  +1 AT S +10                      
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  PUTBAR 0 AT 87 45 DIM 45 60           
+  UP 1 DOWN 1 NOMSG TCODE 6             
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 044
+(                        < 0/ 0/ 0>184) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 045
+( PG 1 FUNCT/FUNCT       < 0/ 0/ 0>185) 
+DIR NEXT                                
+  FORMAT 14                             
+  COLOR 14                              
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 7 AT 0 70                     
+  MSG 554 AT 66 12                      
+  MSG +1 AT -12 +30                     
+  PUTBAR 3 AT S +10 DIM 18 1            
+  MSG +1 AT S +5                        
+  MSG 559 AT S +15                      
+  MSG 557 AT S +15                      
+  MSG  +1 AT S +20                      
+  PUTBAR 3 AT S +10 DIM 30 1            
+  MSG 560 AT S +5                       
+  MSG  +1 AT S +15                      
+  MSG 540 AT 30 175                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 046
+( PG.2  FUNCT/LIN EQ     < 0/ 0/ 0>186) 
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 42 80                   
+  PUTBAR 3 AT 31 20                     
+ DIM 105 60                             
+  MSG 805 AT 32 29 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT  S +10                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 047
+( PG.3   FUNCT/FUNCT     < 0/ 0/ 0>187) 
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 8 AT 0 40                     
+  GRAPHIC 9 AT 116  40                  
+  GRAPHIC 36 AT 42 38                   
+  PUTBAR 3 AT 48 28                     
+  DIM 66 52                             
+  MSG 809 AT 51 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  PUTBAR 0 AT 42 28                     
+  DIM 78 52                             
+  GRAPHIC 37 AT 108 40                  
+  PUTBAR 3 AT 48 28 DIM 58 52           
+  MSG 813 AT 51 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 048
+( PG.4 FUNCT/FUNCT       < 0/ 0/ 0>188) 
+                                        
+  MSG +1 AT S +10 TCODE 1               
+  MSG +1 AT S +10 TCODE 1               
+  NOMSG TCODE 31                        
+  NOMSG TCODE 31                        
+  PUTBAR 0 AT 48 28 DIM 68 62           
+  GRAPHIC 36 AT 42 38                   
+  PUTBAR 3 AT 48 28 DIM 62 42           
+  MSG 817 AT 51 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 3 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 049
+( PG.5 FUNCT/FUNCT       < 0/ 0/ 0>189) 
+                                        
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 820 AT 0 4                        
+  MSG  +1 AT S +10                      
+  LINEWIDTH 1 BOX 1 AT 40 40            
+  DIM 200 115                           
+  PUTBAR 1 AT 68 40                     
+  DIM 1 115                             
+  PUTBAR 1 AT 20 55                     
+  DIM 100 1                             
+  MSG 822 AT 32 42 TCODE 1              
+  MSG  +1 AT 85 S  TCODE 1              
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 050
+( PG.6 FUNCT/FUNCT       < 0/ 0/ 0>190) 
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 824 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG  +1 AT 40 49                      
+  MSG 2 AT 75 47                        
+  LINEWIDTH 1 BOX 6 AT 56 45            
+  DIM 150 15                            
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  LINEWIDTH 1 BOX 3 AT 31 70            
+  DIM 200 80                            
+  PUTBAR 3 AT 63 72                     
+  DIM 1 78                              
+  PUTBAR 3 AT 16 86                     
+  DIM 100 1                             
+  MSG 822 AT 27 73 TCODE 1              
+  MSG  +1 AT 80 S TCODE 1               
+  MSG 2 AT 37 93                        
+  NOMSG TCODE 31 NOMSG TCODE 31         
+                                        
+════════════════════════════════════════   SCREEN 051
+( PG.6 FUNCT/FUNCT       < 0/ 0/ 0>191) 
+                                        
+  MSG 6 AT 89 S                         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  MSG 3 AT 37 108                       
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  MSG 1 AT 88 108                       
+  MSG 2 AT 90 S                         
+  MSG 506 AT 35 123                     
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  MSG 10 AT 89 S                        
+  NOMSG TCODE 31 NOMSG TCODE 31         
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 052
+( PG.7                   < 0/ 0/ 0>192) 
+                                        
+  PUTBAR 0 AT 0 0                       
+  DIM 120 35                            
+  MSG 828 AT 0 0                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 3 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 053
+( PG. 8 FUNCT/FUNCT      < 0/ 0/ 0>193) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 19 AT 105 40                  
+  PUTBAR 3 AT 5 26                      
+  DIM 96 71                             
+  GRAPHIC 37 AT 103 58                  
+  MSG 831 AT 8 30 TCODE 1               
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  PUTBAR 0 AT 5 26                      
+  DIM 103 71                            
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 054
+( PG.9                   < 0/ 0/ 0>194) 
+                                        
+                                        
+  GRAPHIC 20 AT 0 37                    
+  GRAPHIC 36 AT 41 45                   
+  PUTBAR 3 AT 45 28                     
+  DIM 41 35                             
+  MSG 837 AT 48 30 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 055
+( PG.10 FUNCT/FUNCT      < 0/ 0/ 0>195) 
+                                        
+DIR NEXT                                
+  FORMAT 17 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 840 AT 0 4                        
+  MSG  +1 AT S +10                      
+  GRAPHIC 28 AT 12 60                   
+  PUTBAR 3 AT 20 55                     
+  DIM 11 10                             
+  MSG 844 AT 21 82                      
+  LINEWIDTH 1 BOX 3 AT 176 34           
+  DIM 62 120                            
+  PUTBAR 3 AT 103 34 DIM 1 120          
+  PUTBAR 3 AT 88 54 DIM 31 1            
+  MSG 842 AT 95 38 TCODE 1              
+  MSG  +1 AT +15 S TCODE 1              
+  MSG 894 AT 35 104                     
+  MSG 123 AT 0 164                      
+  MSG 18 AT 95 60                       
+  MSG 887 AT +10 S                      
+-->                                     
+                                        
+════════════════════════════════════════   SCREEN 056
+( PG.10A FUNCT/FUNCT     < 0/ 0/ 0>196) 
+                                        
+  MSG 895 AT +4 S                       
+  PUTBAR 0 AT 0 164 DIM 80 20           
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 057
+( PG.11 FUNCT/FUNCT      < 0/ 0/ 0>197) 
+                                        
+DIR NEXT                                
+  FORMAT 18 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 845 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  GRAPHIC 28 AT 12 70                   
+  PUTBAR 3 AT 20 65 DIM 11 12           
+  MSG 507 AT 20 66 TCODE 1              
+  MSG 545 AT 33 114                     
+  MSG 1 AT +5 S                         
+  MSG 10 AT +3 S                        
+  MSG 848 AT 25 135                     
+  LINEWIDTH 1 BOX 3 AT 176 44           
+  DIM 62 100                            
+  PUTBAR 3 AT 103 44 DIM 1 100          
+  PUTBAR 3 AT 88 64 DIM 31 1            
+  MSG 842 AT 95 48 TCODE 1              
+  MSG  +1 AT +15 S TCODE 1              
+  MSG 507 AT 93 70                      
+                                        
+════════════════════════════════════════   SCREEN 058
+( PG 11B FUNCT/FUNCT     < 0/ 0/ 0>198) 
+                                        
+                                        
+                                        
+                                        
+                                        
+  MSG 1 AT +14 S                        
+  MSG 10 AT +3 S                        
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 059
+( PG 12 FUNCT/FUNCT      < 0/ 0/ 0>199) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 4 AT 0 40                     
+  GRAPHIC 5 AT 104 40                   
+  GRAPHIC 23 AT 28 50                   
+  PUTBAR 3 AT 34 28 DIM 60 50           
+  MSG 849 AT 36 30 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31                        
+  PUTBAR 0 AT 28 28 DIM 80 50           
+  PUTBAR 3 AT 48 32 DIM 53 50           
+  GRAPHIC 24 AT 102 50                  
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 060
+( PG 12B FUNCT/FUNCT     < 0/ 0/ 0>200) 
+                                        
+  MSG 853 AT 50 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 061
+( PG.13 FUNCT/FUNCT      < 0/ 0/ 0>201) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 857 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  GRAPHIC 28 AT 12 70                   
+  PUTBAR 3 AT 33 114 DIM 10 12          
+  MSG 894 AT 34 115 TCODE 1             
+  MSG 860 AT 20 92                      
+  LINEWIDTH 1 BOX 3 AT 176 44           
+  DIM 62 100                            
+  PUTBAR 3 AT 103 44 DIM 1 100          
+  PUTBAR 3 AT 88 64 DIM 31 1            
+  MSG 842 AT 93 49 TCODE 3              
+  MSG  +1 AT +16 S TCODE 3              
+  MSG 18 AT 95 70                       
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 062
+( PG.13 CONT             < 0/ 0/ 0>202) 
+                                        
+  MSG 887 AT +10 S                      
+  MSG 895 AT +4 S                       
+  MSG 677 AT 0 154                      
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 063
+( PG.14 FUNCT/FUNCT      < 0/ 0/ 0>203) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 064
+( PG.14 CONT             < 0/ 0/ 0>204) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 065
+(                        < 0/ 0/ 0>205) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 066
+(                        < 0/ 0/ 0>206) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 067
+(                        < 0/ 0/ 0>207) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 068
+(                        < 0/ 0/ 0>208) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 069
+( PG.14 FUNCT/FUNCT      < 0/ 0/ 0>209) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 861 AT 0 4                        
+  MSG  +1 AT S +10                      
+  GRAPHIC 28 AT 12 70                   
+  PUTBAR 3 AT 33 114 DIM 10 12          
+  MSG 894 AT 34 115 TCODE 1             
+  MSG 863 AT 20 92                      
+  LINEWIDTH 1 BOX 3 AT 176 44           
+  DIM 62 100                            
+  PUTBAR 3 AT 103 44 DIM 1 100          
+  PUTBAR 3 AT 88 64 DIM 31 1            
+  MSG 842 AT 93 49 TCODE 3              
+  MSG  +1 AT +16 S TCODE 3              
+  MSG 18 AT 95 70                       
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 070
+( PG 14. CONT            < 0/ 0/ 0>210) 
+                                        
+                                        
+                                        
+  MSG 887 AT +10 S                      
+  MSG 895 AT +4 S   MSG 677 AT 0 154    
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 071
+( PG.14                  < 0/ 0/ 0>211) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 072
+(                        < 0/ 0/ 0>212) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 073
+(                        < 0/ 0/ 0>213) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 074
+(                        < 0/ 0/ 0>214) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 075
+(                        < 0/ 0/ 0>215) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 076
+(                        < 0/ 0/ 0>216) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 077
+( PG 15 FUNCT/FUNCT      < 0/ 0/ 0>217) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 4 AT 0 40                     
+  GRAPHIC 5 AT 114 40                   
+  GRAPHIC 23 AT 25 50                   
+  PUTBAR 3 AT 30 28 DIM 85 58           
+  MSG 864 AT 32 30 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31                        
+  PUTBAR 0 AT 21 28 DIM 97 58           
+  PUTBAR 3 AT 48 32 DIM 53 50           
+  GRAPHIC 24 AT 102 50                  
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 078
+( PG 15B FUNCT/FUNCT     < 0/ 0/ 0>218) 
+                                        
+  MSG 869 AT 50 42 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 079
+( PG.16 FUNCT/FUNCT/     < 0/ 0/ 0>219) 
+                                        
+DIR NEXT                                
+  FORMAT 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 872 AT 0 4                        
+  MSG  +1 AT S +10                      
+  GRAPHIC 28 AT 0 34                    
+  GRAPHIC 29 AT 14 91                   
+  MSG 894 AT 10 29 TCODE 1              
+  MSG 874 AT 10 57                      
+  MSG 876 AT 27 114                     
+  BOX 3 AT 165 29                       
+  DIM 1 80                              
+  BOX 3 AT 215 29                       
+  DIM 1 80                              
+  PUTBAR 14 AT 70 42 DIM 62 1           
+  MSG 842 AT 71 29 TCODE 3              
+  MSG 887 AT +6 S                       
+  MSG 843 AT +9 S TCODE 3               
+                                        
+                                        
+════════════════════════════════════════   SCREEN 080
+( PG.16 CONT             < 0/ 0/ 0>220) 
+                                        
+  MSG 887 AT +6 S                       
+  MSG 842 AT +4 S TCODE 3               
+  MSG 875 AT +6 S                       
+  MSG 843 AT +9 S TCODE 3               
+  MSG 875 AT +6 S                       
+  MSG 18 AT 72 45                       
+  MSG 887 AT +17 S                      
+  MSG 895 AT +4 S                       
+  MSG 875 AT +16 S                      
+  MSG 912 AT +4 S                       
+  PUTBAR 3 AT 71 +12 DIM 60 1           
+  MSG 877 AT 0 154                      
+  MSG  +1 AT 0 +10                      
+  PUTBAR 0 AT 0 154                     
+  DIM 80 25                             
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT S +10                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 081
+(                        < 0/ 0/ 0>221) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 082
+(                        < 0/ 0/ 0>222) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 083
+(                        < 0/ 0/ 0>223) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 084
+(                        < 0/ 0/ 0>224) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 085
+(                        < 0/ 0/ 0>225) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 086
+(                        < 0/ 0/ 0>226) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 087
+( PG 17 FUNCT/FUNCT      < 0/ 0/ 0>227) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 4 AT 0 40                     
+  GRAPHIC 5 AT 104 40                   
+  GRAPHIC 23 AT 28 50                   
+  PUTBAR 3 AT 34 28 DIM 65 50           
+  MSG 879 AT 38 32 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31                        
+  PUTBAR 0 AT 28 28 DIM 85 50           
+  PUTBAR 3 AT 48 32 DIM 46 43           
+  GRAPHIC 24 AT 97 50                   
+-->                                     
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 088
+( PG 17B FUNCT/FUNCT     < 0/ 0/ 0>228) 
+                                        
+  MSG 883 AT 54 36 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 089
+( PG.18 FUNCT/FUNCT/     < 0/ 0/ 0>229) 
+                                        
+DIR NEXT                                
+  FORMAT 20 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 886 AT 0 0                        
+  GRAPHIC 28 AT 0 34                    
+  GRAPHIC 29 AT 14 91                   
+  MSG 3 AT 10 29 TCODE 3                
+  MSG 888 AT 11 57                      
+  MSG 889 AT 27 114                     
+  BOX 3 AT 177 29                       
+  DIM 1 80                              
+  BOX 3 AT 225 29                       
+  DIM 1 80                              
+  PUTBAR 14 AT 70 42 DIM 62 1           
+  MSG 842 AT 76 29 TCODE 3              
+  MSG 887 AT +6 S                       
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 090
+( PG.18 CONT             < 0/ 0/ 0>230) 
+                                        
+                                        
+  MSG 843 AT +9 S TCODE 3               
+  MSG 887 AT +6 S                       
+  MSG 842 AT +4 S TCODE 3               
+  MSG 875 AT +6 S                       
+  MSG 843 AT +9 S TCODE 3               
+  MSG 875 AT +6 S                       
+  MSG 18 AT 77 45                       
+  MSG 887 AT +17 S                      
+  MSG 895 AT +4 S                       
+  MSG 875 AT +18 S                      
+  PUTBAR 3 AT 71 +12 DIM 60 1           
+  MSG 128 AT 0 154                      
+  PUTBAR 0 AT 0 154                     
+  DIM 80 25                             
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT S +10                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6 NOMSG       
+END                                     
+                                        
+                                        
+════════════════════════════════════════   SCREEN 091
+( PG.19 FUNCT/FUNCT      < 0/ 0/ 0>231) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 3 AT 61 42 DIM 40 40           
+  GRAPHIC 24 AT 102 60                  
+  GRAPHIC 22 AT 10 70                   
+  GRAPHIC 21 AT 30 40                   
+  GRAPHIC 21 AT 105 10                  
+  MSG 890 AT 65 45 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 092
+( PG.20 FUNCT/FUNCT      < 0/ 0/ 0>232) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 98                   
+  PUTBAR 3 AT 38 28                     
+  DIM 90 70                             
+  MSG 896 AT 42 40 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S  +10                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 093
+( PG.21 FUNCT/FUNCT      < 0/ 0/ 0>233) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 6 AT 0 30                     
+  GRAPHIC 27 AT 47 118                  
+  PUTBAR 3 AT 38 28 DIM 92 90           
+  MSG 899 AT 42 35 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +15 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 905 AT 70 S TCODE 1               
+  PUTBAR 0 AT S +10 DIM 7 1             
+  MSG  +1 AT S +2 TCODE 1               
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S  +10                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 094
+( PG.22 FUNCT/FUNCT      < 0/ 0/ 0>234) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 907 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  LINEWIDTH 1 BOX 3 AT 10 36            
+  DIM 115 100                           
+  MSG 910 AT 90 60 TCODE 1              
+  NOMSG TCODE 33                        
+  MSG 128 AT 0 154                      
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT S S TCODE 3                
+  MSG 140 AT S +10                      
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 095
+(                        < 0/ 0/ 0>235) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 096
+( PG 1 FUNCT/VARIA       < 0/ 0/ 0>236) 
+DIR NEXT                                
+  FORMAT 14                             
+  COLOR 14                              
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 7 AT 0 70                     
+  MSG 554 AT 66 12                      
+  MSG +1 AT -12 +30                     
+  PUTBAR 3 AT S +10 DIM 18 1            
+  MSG +1 AT S +5                        
+  MSG 559 AT S +15                      
+  MSG 557 AT S +15                      
+  MSG  +1 AT S +20                      
+  PUTBAR 3 AT S +10 DIM 30 1            
+  MSG 560 AT S +5                       
+  MSG  +1 AT S +15                      
+  MSG 540 AT 30 175                     
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 097
+( PG.2 FUNCT/VARIA       < 0/ 0/ 0>237) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 22 AT 0 90                    
+  PUTBAR 3 AT 28 26 DIM 95 80           
+  GRAPHIC 23 AT 24 45                   
+  MSG 913 AT 32 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+NOMSG                                   
+END                                     
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 098
+( PG.3 FUNCT/VARIA       < 0/ 0/ 0>238) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 22 AT 0 90                    
+  GRAPHIC 24 AT 115 45                  
+  PUTBAR 3 AT 28 26 DIM 84 70           
+  MSG 919 AT 32 34 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 099
+( PG.4 FUNCT/VARIA       < 0/ 0/ 0>239) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 4 AT 0 40                     
+  GRAPHIC 9 AT 104 40                   
+  GRAPHIC 23 AT 27 50                   
+  PUTBAR 3 AT 31 20 DIM 70 50           
+  MSG 924 AT 33 24 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  NOMSG TCODE 31 NOMSG TCODE 31         
+  PUTBAR 0 AT 25 20 DIM 76 50           
+  GRAPHIC 24 AT 97 50                   
+  PUTBAR 3 AT 46 32 DIM 48 50           
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 100
+( PG.4 CONT.             < 0/ 0/ 0>240) 
+                                        
+                                        
+  MSG 928 AT 52 36 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 101
+( PG.5 FUNCT/VARIA       < 0/ 0/ 0>241) 
+                                        
+DIR NEXT                                
+  FORMAT 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 932 AT 0 4                        
+  MSG  +1 AT S +10                      
+  NOMSG TCODE 33                        
+  MSG 941 AT 40 45                      
+  PUTBAR  3 AT -3 +11 DIM 12 1          
+  MSG 940 AT +3 +9                      
+  MSG 978 AT +15 -13                    
+  MSG 939 AT 68 45                      
+  PUTBAR 3 AT -3 +11 DIM 12 1           
+  MSG 938 AT +3 +9                      
+  LINEWIDTH 1 BOX 6 AT 25 35            
+  DIM 180 42                            
+  MSG 934 AT 12 82                      
+  MSG 973 AT 40 94                      
+  PUTBAR 3 AT -1 +11 DIM 10 1           
+                                        
+                                        
+════════════════════════════════════════   SCREEN 102
+( PG.5 CONT.             < 0/ 0/ 0>242) 
+                                        
+  MSG 6 AT +3 +2                        
+  MSG 978 AT +13 -6                     
+  MSG 974 AT 68 94                      
+  PUTBAR 3 AT -3 +11 DIM 10 1           
+  MSG 1 AT +3 +2                        
+  MSG 10 AT +3 S                        
+  MSG 979 AT 40 120                     
+  MSG 978 AT +15 S                      
+  MSG 980 AT +11 S                      
+  MSG 976 AT 43 +15                     
+  MSG 978 AT +12 S                      
+  MSG 7 AT +11 S                        
+  MSG 10 AT +3 S                        
+  MSG 976 AT 15 138                     
+  MSG 978 AT +6 S                       
+  MSG 7 AT +7 S                         
+  MSG 10 AT +3 S                        
+  MSG 128 AT 0 154                      
+  MSG 140 AT S +10                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6 NOMSG       
+END                                     
+════════════════════════════════════════   SCREEN 103
+( PG.6 FUNCT/VARIA       < 0/ 0/ 0>243) 
+                                        
+DIR NEXT                                
+  FORMAT 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 4 AT 100 176 DIM 30 13         
+  MSG 935 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG 937 AT 25 50                      
+  MSG 3 AT +80 -6                       
+  PUTBAR 3 AT -1 +10 DIM 7 1            
+  MSG 4 AT +1 +2                        
+  MSG 940 AT 30 80                      
+  MSG 981 AT +10 -6                     
+  MSG 941 AT +30 +6                     
+  MSG 978 AT +11 -6                     
+  MSG 9 AT +7 S                         
+  MSG 938 AT 30 100                     
+  MSG 982 AT +10 -6                     
+  MSG 939 AT +30 +6                     
+  MSG 978 AT +11 -6                     
+                                        
+                                        
+════════════════════════════════════════   SCREEN 104
+( PG.6 CONT.             < 0/ 0/ 0>244) 
+                                        
+  MSG 983 AT +7 S                       
+  MSG  60 AT 100 139 TCODE 1            
+  NOMSG TCODE 33                        
+  MSG 128 AT 0 154                      
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 105
+( PG.7                   < 0/ 0/ 0>245) 
+                                        
+DIR NEXT                                
+  FORMAT 16 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 942 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT S +10                      
+  MSG 941 AT 40 55                      
+  PUTBAR 3 AT -3 +11 DIM 12 1           
+  MSG 940 AT +3 +9                      
+  MSG 978 AT +15 -13                    
+  MSG 939 AT 68 55                      
+  PUTBAR 3 AT -3 +11 DIM 12 1           
+  MSG 938 AT +3 +9                      
+  LINEWIDTH 1 BOX 6 AT 25 45 DIM 180 42 
+  MSG 9 AT 40 100                       
+  PUTBAR 3 AT -2 +12 DIM 7 1            
+  MSG 1 AT 38 +4                        
+  MSG 2 AT +3 S                         
+  MSG 978 AT +14 -8                     
+                                        
+                                        
+════════════════════════════════════════   SCREEN 106
+( PG.7 CONT.             < 0/ 0/ 0>246) 
+                                        
+  MSG 983 AT 68 100                     
+  PUTBAR 3 AT -2 +12 DIM 9 1            
+  MSG 2 AT 66 +4                        
+  MSG 8 AT +5 S                         
+  MSG 128 AT 0 156                      
+  NOMSG TCODE 33                        
+  UP 2 DOWN 1 NOMSG                     
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 107
+( PG.8 FUNCT/VARIA.      < 0/ 0/ 0>247) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 23 AT 13 66                   
+  PUTBAR 3 AT 17 36 DIM 90 90           
+  MSG 945 AT 20 40 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +17 TCODE 1              
+  MSG 950 AT 29 81 TCODE 1              
+  PUTBAR 0 AT -1 +10 DIM 6 1            
+  MSG 977 AT +1 +2 TCODE 1              
+  MSG 951 AT 20 102 TCODE 1             
+  MSG 952 AT 20 112 TCODE 1             
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 108
+( PG.9 FUNCT/VARIA       < 0/ 0/ 0>248) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  PUTBAR 3 AT 25 50 DIM 90 55           
+  GRAPHIC 24 AT 117 65                  
+  MSG 953 AT 28 55 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 109
+( PG.10 FUNCT/VARIA      < 0/ 0/ 0>249) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 8 AT 0 40                     
+  GRAPHIC 23 AT 40 55                   
+  PUTBAR 3 AT 45 30 DIM 87 70           
+  MSG 957 AT 46 36 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  MSG 940 AT S +18 TCODE 1              
+  MSG  +1 AT +9 S TCODE 1               
+  MSG 978 AT +11 -6 TCODE 1             
+  MSG 938 AT +9 +6 TCODE 1              
+  MSG  +1 AT +9 S TCODE 1               
+  MSG 140 AT 75 164                     
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 110
+( PG.11                  < 0/ 0/ 0>250) 
+                                        
+DIR NEXT                                
+  FORMAT 19 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 961 AT 0 0                        
+  LINEWIDTH 1 BOX 6 AT 62 18            
+  DIM 144 25                            
+  MSG 940 AT 43 30                      
+  MSG  +1 AT +11 S                      
+  MSG 978 AT +11 -6                     
+  MSG 938 AT +9 +6                      
+  MSG  +1 AT +11 S                      
+  MSG  940 AT 43 60                     
+  MSG  984 AT +8 -6                     
+  MSG  941 AT +23 +6                    
+  MSG 978 AT +9 -6                      
+  MSG 6 AT +6 S                         
+  MSG 938 AT 43 80                      
+  MSG 985 AT +8 -6                      
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 111
+( PG.11 CONT.            < 0/ 0/ 0>251) 
+                                        
+  MSG 939 AT +23 +6                     
+  MSG 894 AT +9 -6                      
+  MSG 962 AT 31 96                      
+  MSG 970 AT 46 +17                     
+  MSG 528 AT +35 S                      
+  MSG 939 AT +5 +6                      
+  MSG 971 AT 54 129                     
+  MSG 939 AT +25 +6                     
+  MSG 972 AT 60 144                     
+  MSG 939 AT +13 +6                     
+  MSG 140 AT 0 164                      
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 112
+( PG.12 FUNCT/VARIA      < 0/ 0/ 0>252) 
+                                        
+DIR NEXT                                
+  FORMAR 13 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 963 AT 0 4                        
+  MSG  +1 AT S +10                      
+  MSG  +1 AT 25 40                      
+  MSG 978 AT +72 S                      
+  MSG 940 AT 25 +26                     
+  MSG 978 AT +9 -6                      
+  MSG 941 AT +30 +6                     
+  MSG 978 AT +9 -6                      
+  MSG 938 AT 25 +26                     
+  MSG 978 AT +9 -6                      
+  MSG 939 AT +30 +6                     
+  MSG 978 AT +9 -6                      
+  MSG 217 AT 0 154                      
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT 0 164                      
+                                        
+                                        
+════════════════════════════════════════   SCREEN 113
+( PG.12 CONT             < 0/ 0/ 0>253) 
+                                        
+  MSG  +1 AT S +10                      
+  UP 2 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 114
+( PG.13 FUNCT/VARIA      < 0/ 0/ 0>254) 
+                                        
+DIR NEXT                                
+  FORMAT 20 COLOR 5                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  MSG 940 AT 5 38                       
+  MSG  +1 AT +9 S                       
+  MSG 978 AT +11 -6                     
+  MSG 938 AT +9 +6                      
+  MSG  +1 AT +9 S                       
+  MSG 966 AT +10 -6                     
+  LINEWIDTH 1 BOX 6 AT 5 25             
+  DIM 253 27                            
+  MSG 967 AT 15 60                      
+  MSG 217 AT 0 154                      
+  PUTBAR 0 AT 0 154 DIM 90 15           
+  MSG 612 AT 0 154 TCODE 3              
+  MSG 140 AT S +10                      
+  MSG  +1 AT S +10                      
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+════════════════════════════════════════   SCREEN 115
+( PG. 14                 < 0/ 0/ 0>255) 
+                                        
+DIR NEXT                                
+  FORMAT 10 COLOR 0                     
+  NOGRAPH RUN 0                         
+DOES                                    
+  GRAPHIC 11 AT 20 0                    
+  PUTBAR 3 AT 50 60                     
+  DIM 58 40                             
+  GRAPHIC 24 AT 111 75                  
+  MSG 968 AT 56 68 TCODE 1              
+  MSG  +1 AT S +10 TCODE 1              
+  UP 1 DOWN 1 NOMSG TCODE 6             
+  NOMSG                                 
+END                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+════════════════════════════════════════   SCREEN 116
+(                        < 0/ 0/ 0>256) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 117
+(                        < 0/ 0/ 0>257) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 118
+(                        < 0/ 0/ 0>258) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 119
+(                        < 0/ 0/ 0>259) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 120
+(                        < 0/ 0/ 0>260) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 121
+(                        < 0/ 0/ 0>261) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 122
+(                        < 0/ 0/ 0>262) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 123
+(                        < 0/ 0/ 0>263) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 124
+(                        < 0/ 0/ 0>264) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 125
+(                        < 0/ 0/ 0>265) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 126
+(                        < 0/ 0/ 0>266) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 127
+(                        < 0/ 0/ 0>267) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 128
+(                        < 0/ 0/ 0>268) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 129
+(                        < 0/ 0/ 0>269) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 131
+(                        < 0/ 0/ 0>271) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 132
+(                        < 0/ 0/ 0>272) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 133
+(                        < 0/ 0/ 0>273) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 134
+(                        < 0/ 0/ 0>274) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 135
+(                        < 0/ 0/ 0>275) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 136
+(                        < 0/ 0/ 0>276) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 137
+(                        < 0/ 0/ 0>277) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 138
+(                        < 0/ 0/ 0>278) 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
+════════════════════════════════════════   SCREEN 139
+(                        < 0/ 0/ 0>279) 
+                                        
+OPDB                                    
+: Q OPDB 0 SCR @ TRY START              
+  ( TEXT ( OS ) OPDB LL E ;             
+EXIT                                    
+OPDB                                    
+: Q OPDB 0 SCR @ TRY START              
+  ( TEXT ( OS ) OPDB LL E ;             
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                               ( GRW)   
